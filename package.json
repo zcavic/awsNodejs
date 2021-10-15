@@ -9,7 +9,8 @@
     "nodemon": "^2.0.13"
   },
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js",
+    "debug": "nodemon app.js"
   },
   "nodemonConfig": {
     "restartable": "rs",
