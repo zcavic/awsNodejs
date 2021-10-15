@@ -2,9 +2,20 @@
   "name": "Elastic-Beanstalk-Sample-App",
   "version": "0.0.1",
   "private": true,
-   "engines": { "node" : "14.18.0" },
-  "dependencies": {},
+  "engines": {
+    "node": "14.18.0"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.13"
+  },
   "scripts": {
-    "start": "node app.js"
+    "start": "nodemon app.js"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "delay": 2500,
+    "env": {
+      "PORT": 4000
+    }
   }
 }
