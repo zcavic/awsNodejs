@@ -2,10 +2,13 @@
   "name": "Elastic-Beanstalk-Sample-App",
   "version": "0.0.1",
   "private": true,
+  "type": "module",
   "engines": {
     "node": "14.18.0"
   },
   "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
     "nodemon": "^2.0.13"
   },
   "scripts": {
