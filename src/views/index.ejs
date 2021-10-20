@@ -1,6 +1,60 @@
-<!DOCTYPE html>
 <html>
+<head>
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
 
-This is the Index page 
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
 
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+
+<h1>The user management page</h1>
+
+<p>In this page you can do a basic user management operations.</p>
+<p><strong>Get person:</strong> You will get all users form database.</p>
+<p><strong>Post person:</strong> You will create a new use and save it into the database.</p>
+
+<form action="/getUser" method="get" id="getUserForm">
+    <label for="fname">User name:</label><br>
+    <input type="text" id="username" name="username"><br>
+    <button type="submit" class="button button1"><i class="fa fa-check"></i>Get user</button>
+</form>
+
+<form action="/postUser" method="get" id="postUserForm">
+    <button type="submit" class="button button2"><i class="fa fa-check"></i>Post user</button>
+</form>
+
+</body>
 </html>
