@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 app.get('/getUser', async (req, res, next) => {
     await userController.getUser(req, res, next);
 });
-
+  
 app.get('/postUser', async (req, res, next) => {
     await userController.postUser(req, res, next);
 });
