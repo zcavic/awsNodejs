@@ -1,0 +1,7 @@
+.ebextensions
+.vscode
+node_modules
+.dockerignore
+Dockerfile
+.gitignore
+.git
